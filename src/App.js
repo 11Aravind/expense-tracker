@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react';
 import {Expensetracker} from './component/Expensetracker'
 function App() {
   return (

@@ -1,4 +1,4 @@
-
+import React from 'react';
 import { useRef, useState } from 'react'
 export function Addtransition({expenseList,transitionCallBack}) {  
   const ref=useRef(null);
@@ -8,10 +8,6 @@ export function Addtransition({expenseList,transitionCallBack}) {
     description: "",
     type: ""
     });
-    // const clear=()=>{
-    //   ref.current.value = "";
-    //   refamount.current.value = "";
-    // }
   const addData = (e) => {
     e.preventDefault();
     transitionCallBack([...expenseList, formData]);
@@ -25,7 +21,6 @@ export function Addtransition({expenseList,transitionCallBack}) {
   return (
     <>
       <form onSubmit={addData} className="addExpenseForm">
-        {/* {JSON.stringify(formData)} */}
         <div className="row">
           <div className="col">
             <input type="text" className="form-control" refamount={refamount} placeholder="Amount" name="amount" onChange={changeValue} />

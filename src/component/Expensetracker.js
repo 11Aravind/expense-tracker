@@ -1,3 +1,4 @@
+import React from 'react';
 import { Addtransition } from './Addtransition'
 import { Transitiondetails } from './Transitiondetails'
 import Card from './Card'

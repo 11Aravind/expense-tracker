@@ -1,4 +1,4 @@
-
+import React from 'react';
 export const Balance= ({sendData,state,income,expense})=> {
  const onClick=()=>{
   sendData(!state)
