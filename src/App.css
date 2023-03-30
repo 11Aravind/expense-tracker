@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+.mainContainer{
+    /* align-items: center; */
+    padding: 36px;
+    /* justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    /* background-color: cadetblue; */
+    width: 50%;
+    
+
+    
+}
+.cardContainer,.buttonContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.oneTransaction{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border-bottom: 1px solid gray;
+    border-radius: 5px;
+
+}
+.red{
+    border-right: 6px solid red;
+}
+.green{
+    border-right: 6px solid green;
+}
+.transition{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card{
+    width: 13rem;
+    margin: 10px 5px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+    background-image: linear-gradient(to right, #73cd23 , #0fe7d3);
+    /* background-image: linear-gradient(to right, red , yellow); */
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Container{
+    height: 91vh;
+    border-radius: 7px;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 38px 59px;
+    /* width: 100%; */
+    /* height: 100vh; */
+    display: flex;
+    /* background-color: yellow; */
+    justify-content: center;
+    align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.item{
+    border-right: red;
 }
+.formContainer{
+    /* border: 1px solid #98ade4; */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 12px;
+    border-radius: 7px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+h4{
+    color: #25269a;
+}
+.image{
+    width: 50%;
+}
+.image>img{
+    width: 100%;
+}
+.warning {
+    border: none;
+    padding: 4px 14px;
+    border-radius: 4px;
+    /* font-size: 18px; */
+    float: right;
+
+    color: black;
+    background: #ffc107e8;
+}
+small{
+    font-weight: 600;
+}
+.addExpenseForm{
+    padding: 21px 9px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.div{
+    margin: 13px 0px;
+}
+@media (max-width:801px)  {
+    .Container{
+        margin:0px;
+        justify-content: normal;
+        align-items:normal;
+    }
+    .cardContainer {
+        /* flex-direction: column; */
+        justify-content: center;
+    }
+    .image{
+        display: none;
+    }
+    .mainContainer{
+        box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+        width: 100%;
+    }
+    .card {
+        width: 10rem;
+    }
+    body{
+        background-image: linear-gradient(to right, #fff , #fff);
+    }
+    
 }

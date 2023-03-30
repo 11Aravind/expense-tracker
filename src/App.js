@@ -1,24 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-
+import {Expensetracker} from './component/Expensetracker'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <>
+  <div className="Container">
+  <div className="mainContainer">
+      <h4>Expense Tracker</h4>
+  <Expensetracker/>
+  </div>
+  <div className="image">
+    <img src="https://cdni.iconscout.com/illustration/premium/thumb/manage-expenses-7074226-5752244.png" alt="image" />
+  </div>
+  </div>
+  </>
   );
 }
 
