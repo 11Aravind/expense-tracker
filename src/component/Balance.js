@@ -7,7 +7,7 @@ export const Balance= ({sendData,state,income,expense})=> {
     <>
     <div className="buttonContainer" style={{'padding': '9px 0px'}}>
         <div className="left">
-         <b>  Balance:${income-expense}</b>
+         <b>  Balance:<span className="b">₹{income-expense}</span> </b>
         </div>
         <div className="right">
           <button className="warning" onClick={onClick}>{state ?(<small>Cancel</small>):<small>ADD</small>}</button>
