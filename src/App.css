@@ -29,9 +29,13 @@ body{
 }
 .notFoundDiv{
     /* background-color: #4bcf69; */
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .notFoundDiv>img{
-    width: 100%;
+    width: 50%;
 }
 .transcationHeadding{
     display: flex;
