@@ -27,9 +27,16 @@ body{
     /* flex-wrap: wrap; */
     
 }
+.notFoundDiv{
+    /* background-color: #4bcf69; */
+}
+.notFoundDiv>img{
+    width: 100%;
+}
 .transcationHeadding{
     display: flex;
     justify-content: space-between;
+    padding: 14px 0px;
     /* justify-content: center; */
     /* align-items: center; */
 }
@@ -142,6 +149,7 @@ b{
     color: #817873;
     border: 1px solid #ced4da;
     border-radius: 3px;
+    background: transparent;
 }
 @media (max-width:1061px) {
     .card {
@@ -151,6 +159,7 @@ b{
 @media (max-width:820px)  {
     .transcationHeadding,.buttonContainer{
         justify-content: space-around;
+        
        
     }
     .Container{
